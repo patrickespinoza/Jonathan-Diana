@@ -34,12 +34,12 @@ const Countdown = ({ targetDate }) => {
       <div className="flex flex-col items-center">
 
         {/* Título */}
-        <h2 className="font-playfair text-[#7B7A42] text-2xl md:text-3xl mb-3 tracking-wide">
+        <h2 className="font-playfair text-[#636B2F] text-2xl md:text-3xl mb-3 tracking-wide">
           Cuenta Regresiva
         </h2>
 
         {/* Línea decorativa */}
-        <div className="w-24 h-[2px] bg-[#C14E29] mb-10"></div>
+        <div className="w-24 h-[2px] bg-[#B7410E] mb-10"></div>
 
         {/* Contador */}
         <div className="flex flex-wrap justify-center gap-5 md:gap-8">
@@ -64,7 +64,7 @@ const Countdown = ({ targetDate }) => {
                 className="
                   w-16 h-16
                   rounded-full
-                  bg-[#C14E29]
+                  bg-[#636B2F]
                   text-white
                   font-bold
                   text-2xl
@@ -81,7 +81,7 @@ const Countdown = ({ targetDate }) => {
               <span
                 className="
                   mt-3
-                  text-[#7B7A42]
+                  text-[#636B2F]
                   uppercase
                   tracking-wider
                   text-xs
@@ -97,7 +97,7 @@ const Countdown = ({ targetDate }) => {
         {/* Mensaje final */}
         {Object.keys(timeLeft).length === 0 && (
           <div className="text-center">
-            <p className="text-[#C14E29] text-3xl font-cursiveDancing">
+            <p className="text-[#B7410E] text-3xl font-cursiveDancing">
               ¡Llegó el gran día!
             </p>
           </div>

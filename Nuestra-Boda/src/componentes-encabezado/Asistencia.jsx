@@ -4,40 +4,43 @@ const Confirmacion = () => {
   const [nombreInvitado, setNombreInvitado] = useState("");
   const [mensajeInvitado, setMensajeInvitado] = useState("");
   const [asistencia, setAsistencia] = useState("");
-  const [invitados, setInvitados] = useState(1);
+  const [invitados, setInvitados] = useState("");
   const [error, setError] = useState("");
 
   const enviarConfirmacion = async (tipoInvitado) => {
-    if (!nombreInvitado || !asistencia) {
-      setError("Completa tu nombre y confirma asistencia");
-      return;
-    }
+  if (!nombreInvitado || !asistencia) {
+    setError("Completa tu nombre y confirma asistencia");
+    return;
+  }
 
-    setError("");
+  setError("");
 
-    const numero =
-      tipoInvitado === "novio"
-        ? "522949458172"
-        : "522881333860";
+  const numero =
+    tipoInvitado === "novio"
+      ? "522949458172"
+      : "522881333860";
 
-    const data = {
-      nombre: nombreInvitado,
-      asistencia,
-      invitados,
-      mensaje: mensajeInvitado,
-      lado: tipoInvitado === "novio" ? "Novio" : "Novia",
-    };
+  const data = {
+    nombre: nombreInvitado,
+    asistencia,
+    invitados,
+    mensaje: mensajeInvitado,
+    lado: tipoInvitado === "novio" ? "Novio" : "Novia",
+  };
 
-    try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbwJAfcc54UB8kTxGb28gK-eSyga58NTvOJ7uwAoVGw3zPv2awqg7jXWWrBsv1IlxcFUtA/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(data),
-        }
-      );
+  try {
+    await fetch(
+  "https://script.google.com/macros/s/AKfycbwQsf6eKWgz6Rxiu0KM4g5aSGZTrywd6lCVMWASopk_ad71x_ydQypHNcmYWz6RxLrHXA/exec",
+  {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(data),
+  }
+);
 
-      const mensaje = `✨ Confirmación de asistencia ✨
+    console.log("Enviado");
+
+    const mensaje = `✨ Confirmación de asistencia ✨
 
 Nombre: ${nombreInvitado}
 Asistencia: ${asistencia}
@@ -47,28 +50,29 @@ Mensaje:
 ${mensajeInvitado || "Sin mensaje"}
 
 Invitado de: ${
-        tipoInvitado === "novio"
-          ? "Jonathan"
-          : "Diana"
-      }
+      tipoInvitado === "novio"
+        ? "Jonathan"
+        : "Diana"
+    }
 
 ¡Nos vemos en la boda! 💍`;
 
-      const url = `https://wa.me/${numero}?text=${encodeURIComponent(
-        mensaje
-      )}`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(
+      mensaje
+    )}`;
 
-      window.open(url, "_blank");
+    window.open(url, "_blank");
 
-      setNombreInvitado("");
-      setMensajeInvitado("");
-      setAsistencia("");
-      setInvitados("");
-    } catch (error) {
-      console.error(error);
-      setError("Hubo un error al enviar");
-    }
-  };
+    setNombreInvitado("");
+    setMensajeInvitado("");
+    setAsistencia("");
+    setInvitados("");
+
+  } catch (error) {
+    console.error(error);
+    setError("Hubo un error al enviar");
+  }
+};
 
   return (
     <section
@@ -94,7 +98,7 @@ Invitado de: ${
             text-center
             uppercase
             tracking-[0.35em]
-            text-[#B6642E]
+            text-[#B7410E]
             text-xs
           "
         >
@@ -107,7 +111,7 @@ Invitado de: ${
             text-4xl
             md:text-5xl
             font-cursiveDancing
-            text-[#6E7140]
+            text-[#636B2F]
             mt-4
           "
         >
@@ -118,7 +122,7 @@ Invitado de: ${
           className="
             w-20
             h-[2px]
-            bg-[#B6642E]
+            bg-[#B7410E]
             mx-auto
             mt-5
             mb-8
@@ -168,7 +172,7 @@ Invitado de: ${
               transition-all
               ${
                 asistencia === "Sí asistiré"
-                  ? "bg-[#6E7140] text-white border-[#6E7140]"
+                  ? "bg-[#636B2F] text-white border-[#636B2F]"
                   : "bg-white border-[#D9D0C5]"
               }
             `}
@@ -188,7 +192,7 @@ Invitado de: ${
               transition-all
               ${
                 asistencia === "No podré asistir"
-                  ? "bg-[#B6642E] text-white border-[#B6642E]"
+                  ? "bg-[#B7410E] text-white border-[#B7410E]"
                   : "bg-white border-[#D9D0C5]"
               }
             `}
@@ -261,7 +265,7 @@ Invitado de: ${
             }
             className="
               flex-1
-              bg-[#6E7140]
+              bg-[#636B2F]
               hover:bg-[#5A5D33]
               text-white
               py-4
@@ -281,7 +285,7 @@ Invitado de: ${
             }
             className="
               flex-1
-              bg-[#B6642E]
+              bg-[#B7410E]
               hover:bg-[#9E5324]
               text-white
               py-4

@@ -28,7 +28,7 @@ const Novios = () => {
       >
 
         {/* Glow decorativo */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#B8C0A0]/20 via-transparent to-[#C14E29]/10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#B8C0A0]/20 via-transparent to-[#B7410E]/10 pointer-events-none"></div>
 
         {/* Encabezado */}
         <motion.p
@@ -38,7 +38,7 @@ const Novios = () => {
           viewport={{ once: true }}
           className="
             text-xl sm:text-2xl
-            text-[#7B7A42]/90
+            text-[#636B2F]/90
             font-[DancingScript]
             leading-relaxed
           "
@@ -46,7 +46,7 @@ const Novios = () => {
           Con la bendición de nuestros padres
         </motion.p>
 
-        <p className="mt-3 text-[#C14E29] uppercase tracking-[0.3em] text-xs">
+        <p className="mt-3 text-[#B7410E] uppercase tracking-[0.3em] text-xs">
           Y en compañía de nuestros seres queridos
         </p>
 
@@ -56,7 +56,7 @@ const Novios = () => {
           whileInView={{ width: "6rem" }}
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
-          className="h-[2px] bg-[#C14E29] mx-auto mt-8"
+          className="h-[2px] bg-[#B7410E] mx-auto mt-8"
         />
 
         {/* Padres */}
@@ -79,7 +79,7 @@ const Novios = () => {
           >
             <h2
               className="
-                text-[#C14E29]
+                text-[#B7410E]
                 uppercase
                 tracking-[0.2em]
                 text-sm
@@ -93,7 +93,7 @@ const Novios = () => {
               className="
                 text-2xl
                 font-playfair
-                text-[#7B7A42]
+                text-[#636B2F]
               "
             >
               Guadalupe Martinez Ramos
@@ -117,7 +117,7 @@ const Novios = () => {
           >
             <h2
               className="
-                text-[#C14E29]
+                text-[#B7410E]
                 uppercase
                 tracking-[0.2em]
                 text-sm
@@ -131,7 +131,7 @@ const Novios = () => {
               className="
                 text-2xl
                 font-playfair
-                text-[#7B7A42]
+                text-[#636B2F]
               "
             >
               Luciano Barran Calix
@@ -145,7 +145,7 @@ const Novios = () => {
               className="
                 my-6
                 text-2xl sm:text-3xl
-                text-[#C14E29]
+                text-[#B7410E]
                 font-[DancingScript]
               "
             >
@@ -156,7 +156,7 @@ const Novios = () => {
               className="
                 text-2xl
                 font-playfair
-                text-[#7B7A42]
+                text-[#636B2F]
               "
             >
               Gloria Cristina Leon Hernandez
@@ -170,7 +170,7 @@ const Novios = () => {
           whileInView={{ width: "7rem" }}
           transition={{ duration: 1, delay: 0.6 }}
           viewport={{ once: true }}
-          className="h-[2px] bg-[#C14E29] mx-auto mt-14"
+          className="h-[2px] bg-[#B7410E] mx-auto mt-14"
         />
 
         {/* Padrinos */}
@@ -182,7 +182,7 @@ const Novios = () => {
           className="
             mt-8
             uppercase
-            text-[#C14E29]
+            text-[#B7410E]
             tracking-[0.2em]
             text-xs sm:text-sm
             font-semibold
@@ -200,7 +200,7 @@ const Novios = () => {
             mt-10
             text-3xl sm:text-4xl md:text-5xl
             font-playfair
-            text-[#7B7A42]
+            text-[#636B2F]
             leading-tight
           "
         >
@@ -215,7 +215,7 @@ const Novios = () => {
           className="
             my-6
             text-3xl sm:text-4xl
-            text-[#C14E29]
+            text-[#B7410E]
             font-[DancingScript]
           "
         >
@@ -230,7 +230,7 @@ const Novios = () => {
           className="
             text-3xl sm:text-4xl md:text-5xl
             font-playfair
-            text-[#7B7A42]
+            text-[#636B2F]
             leading-tight
           "
         >

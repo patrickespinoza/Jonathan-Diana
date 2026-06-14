@@ -19,15 +19,15 @@ const Regalos = () => {
     <>
       <section className="bg-[#E3DBD1] py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="uppercase tracking-[0.35em] text-[#C14E29] text-xs">
+          <p className="uppercase tracking-[0.35em] text-[#B7410E] text-xs">
             Regalos
           </p>
 
-          <h1 className="font-cursiveDancing text-[#7B7A42] text-5xl mt-4">
+          <h1 className="font-cursiveDancing text-[#636B2F] text-5xl mt-4">
             Lluvia de Sobres
           </h1>
 
-          <div className="w-24 h-[2px] bg-[#C14E29] mx-auto mt-6"></div>
+          <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
 
 
           <p
@@ -35,7 +35,7 @@ const Regalos = () => {
               mt-10
               text-lg
               md:text-xl
-              text-[#7B7A42]
+              text-[#636B2F]
               leading-relaxed
               max-w-3xl
               mx-auto
@@ -52,7 +52,7 @@ const Regalos = () => {
             onClick={() => setMostrarModal(true)}
             className="
               mt-12
-              bg-[#C14E29]
+              bg-[#B7410E]
               hover:bg-[#A94422]
               text-white
               px-10

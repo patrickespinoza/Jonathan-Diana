@@ -107,7 +107,7 @@ const Carousel = () => {
               ${
                 index === i
                   ? "w-8 h-3 bg-[#C14E29]"
-                  : "w-3 h-3 bg-[#B8C0A0]"
+                  : "w-3 h-3 bg-[#636B2F]"
               }
             `}
           />

@@ -1,27 +1,8 @@
-import React, { useRef, useState } from "react";
-import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
+import React from "react";
+
 
 export default function Portada() {
-  const audioRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(false);
-
-  const handlePlayMusic = () => {
-    if (audioRef.current) {
-      audioRef.current.play().catch((error) => {
-        console.error(
-          "Error al intentar reproducir el audio:",
-          error
-        );
-      });
-    }
-  };
-
-  const toggleMute = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
-    }
-  };
+ 
 
   return (
     <section className="w-full bg-[#F5EFE6]">
@@ -153,47 +134,6 @@ export default function Portada() {
           </p>
         </div>
       </div>
-
-      {/* Audio oculto */}
-      <audio
-        ref={audioRef}
-        loop
-        preload="auto"
-      >
-        <source src="/musica.mp3" type="audio/mpeg" />
-      </audio>
-
-      {/* Botón música */}
-      <button
-        onClick={() => {
-          handlePlayMusic();
-          toggleMute();
-        }}
-        className="
-          fixed
-          bottom-6
-          right-6
-          z-50
-          w-12
-          h-12
-          rounded-full
-          bg-white/90
-          backdrop-blur-md
-          shadow-xl
-          flex
-          items-center
-          justify-center
-          text-[#6E7140]
-          hover:scale-110
-          transition-all
-        "
-      >
-        {isMuted ? (
-          <FaVolumeMute size={18} />
-        ) : (
-          <FaVolumeUp size={18} />
-        )}
-      </button>
 
     </section>
   );

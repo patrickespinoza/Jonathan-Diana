@@ -18,14 +18,14 @@ const Detalles = () => {
         {/* Encabezado */}
         <div className="text-center">
 
-          <p className="uppercase tracking-[0.35em] text-[#C14E29] text-xs">
+          <p className="uppercase tracking-[0.35em] text-[#B7410E] text-xs">
             Información Importante
           </p>
 
           <h1
             className="
               font-cursiveDancing
-              text-[#7B7A42]
+              text-[#636B2F]
               text-4xl
               sm:text-5xl
               mt-4
@@ -34,7 +34,7 @@ const Detalles = () => {
             Código de Vestimenta
           </h1>
 
-          <div className="w-24 h-[2px] bg-[#C14E29] mx-auto mt-6"></div>
+          <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
 
           <h2
             className="
@@ -42,7 +42,7 @@ const Detalles = () => {
               text-2xl
               md:text-3xl
               font-playfair
-              text-[#7B7A42]
+              text-[#636B2F]
             "
           >
             Semi Formal
@@ -67,7 +67,7 @@ const Detalles = () => {
 
             <p
               className="
-                text-[#7B7A42]
+                text-[#636B2F]
                 leading-relaxed
                 text-lg
               "
@@ -80,13 +80,13 @@ const Detalles = () => {
             {/* Paleta */}
             <div className="flex justify-center flex-wrap gap-3 mt-10">
 
-              <div className="w-10 h-10 rounded-full bg-[#7B7A42]"></div>
+              <div className="w-10 h-10 rounded-full bg-[#636B2F]"></div>
 
               <div className="w-10 h-10 rounded-full bg-[#B8C0A0]"></div>
 
               <div className="w-10 h-10 rounded-full bg-[#E3DBD1] border"></div>
 
-              <div className="w-10 h-10 rounded-full bg-[#C14E29]"></div>
+              <div className="w-10 h-10 rounded-full bg-[#B7410E]"></div>
 
             </div>
 
@@ -97,7 +97,7 @@ const Detalles = () => {
                 🥂
               </p>
 
-              <p className="mt-2 text-[#7B7A42]">
+              <p className="mt-2 text-[#636B2F]">
                 Gracias por ayudarnos a crear una velada especial.
               </p>
 

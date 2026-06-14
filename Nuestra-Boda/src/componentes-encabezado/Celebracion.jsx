@@ -14,7 +14,7 @@ const CardUbicacion = ({
         backdrop-blur-sm
         rounded-[2rem]
         shadow-lg
-        border border-[#B8C0A0]/30
+        border border-[#636B2F]/30
         p-8
         max-w-md
         w-full
@@ -37,36 +37,36 @@ const CardUbicacion = ({
           sm:text-3xl
           font-bold
           font-playfair
-          text-[#C14E29]
+          text-[#B7410E]
         "
       >
         {titulo}
       </h1>
 
       {/* Línea */}
-      <div className="w-16 h-[2px] bg-[#B8C0A0] mx-auto my-5"></div>
+      <div className="w-16 h-[2px] bg-[#636B2F] mx-auto my-5"></div>
 
       {/* Fecha y hora */}
       <div
         className="
           text-lg
-          text-[#7B7A42]
+          text-[#636B2F]
           font-cursiveDancing
           space-y-1
         "
       >
-        <p>{fecha}</p>
-        <p>{hora}</p>
+        <p className="text-xl">{fecha}</p>
+        <p className="text-xl"> {hora}</p>
       </div>
 
       {/* Ubicación */}
-      <div className="mt-6 pt-6 border-t border-[#B8C0A0]/30">
+      <div className="mt-6 pt-6 border-t border-[#636B2F]/30">
         <p
           className="
             uppercase
             tracking-[0.2em]
             text-xs
-            text-[#C14E29]
+            text-[#B7410E]
             mb-3
           "
         >
@@ -77,7 +77,7 @@ const CardUbicacion = ({
           className="
             font-semibold
             text-lg
-            text-[#7B7A42]
+            text-[#636B2F]
           "
         >
           📍 {lugar}
@@ -86,7 +86,7 @@ const CardUbicacion = ({
         <p
           className="
             text-sm
-            text-[#7B7A42]/80
+            text-[#636B2F]/80
             mt-2
           "
         >
@@ -102,8 +102,8 @@ const CardUbicacion = ({
         className="
           inline-block
           mt-8
-          bg-[#C14E29]
-          hover:bg-[#A7411F]
+          bg-[#B7410E]
+          hover:bg-[#B7410E]
           text-white
           px-8
           py-3
@@ -125,15 +125,15 @@ const Celebracion = () => {
 
       {/* Título */}
       <div className="text-center mb-14">
-        <p className="uppercase tracking-[0.3em] text-[#C14E29] text-sm">
+        <p className="uppercase tracking-[0.3em] text-[#B7410E] text-sm">
           Ceremonia & Recepción
         </p>
 
-        <h2 className="font-playfair text-4xl text-[#7B7A42] mt-4">
+        <h2 className="font-playfair text-4xl text-[#636B2F] mt-4">
           Acompáñanos
         </h2>
 
-        <div className="w-24 h-[2px] bg-[#C14E29] mx-auto mt-6"></div>
+        <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
       </div>
 
       {/* Cards */}
