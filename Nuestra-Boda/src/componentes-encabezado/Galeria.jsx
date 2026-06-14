@@ -12,12 +12,12 @@ const Galeria = () => {
           absolute
           top-0
           left-0
-          w-32
+          w-44
           sm:w-48
           md:w-60
           lg:w-80
           -translate-x-1
-          -translate-y-10
+          -translate-y-16
           pointer-events-none
           z-0
           rotate-180
@@ -32,12 +32,12 @@ const Galeria = () => {
           absolute
           top-0
           right-0
-          w-32
+          w-44
           sm:w-48
           md:w-60
           lg:w-80
           translate-x-1
-          -translate-y-14
+          -translate-y-16
           scale-x-[-1]
           pointer-events-none
           z-0
@@ -53,12 +53,12 @@ const Galeria = () => {
           absolute
           bottom-0
           left-0
-          w-32
+          w-44
           sm:w-48
           md:w-60
           lg:w-80
           -translate-x-1
-          translate-y-16
+          translate-y-20
           scale-y-[-1]
           pointer-events-none
           z-0
@@ -74,12 +74,12 @@ const Galeria = () => {
           absolute
           bottom-0
           right-0
-          w-32
+          w-44
           sm:w-48
           md:w-60
           lg:w-80
           translate-x-1
-          translate-y-16
+          translate-y-20
           pointer-events-none
           z-0
         "

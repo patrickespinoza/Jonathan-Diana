@@ -13,12 +13,12 @@ const Detalles = () => {
           absolute
           top-0
           left-0
-          w-32
+          w-40
           sm:w-48
           md:w-60
           lg:w-80
           -translate-x-1
-          -translate-y-10
+          -translate-y-14
           pointer-events-none
           z-0
           rotate-180
@@ -33,7 +33,7 @@ const Detalles = () => {
           absolute
           top-0
           right-0
-          w-32
+          w-40
           sm:w-48
           md:w-60
           lg:w-80
@@ -54,7 +54,7 @@ const Detalles = () => {
           absolute
           bottom-0
           left-0
-          w-32
+          w-40
           sm:w-48
           md:w-60
           lg:w-80
@@ -75,7 +75,7 @@ const Detalles = () => {
           absolute
           bottom-0
           right-0
-          w-32
+          w-40
           sm:w-48
           md:w-60
           lg:w-80

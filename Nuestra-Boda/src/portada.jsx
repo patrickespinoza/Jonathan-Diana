@@ -24,7 +24,11 @@ export default function Portada() {
             relative
             overflow-hidden
             px-6
-            py-16
+            py-32
+            min-h-[360px]
+            flex
+            items-center
+            justify-center
             text-center
             bg-[#F5EFE6]
           "
@@ -37,27 +41,13 @@ export default function Portada() {
               absolute
               top-0
               left-0
-              w-40
+              w-32
+              min-[390px]:w-36
+              sm:w-44
               z-0
               -translate-x-1
-              -translate-y-4
+              -translate-y-10
               rotate-180
-              pointer-events-none
-            "
-          />
-
-          {/* Flores esquina inferior derecha */}
-          <img
-            src="/flores-esquina.png"
-            alt="Flores decorativas"
-            className="
-              absolute
-              bottom-0
-              right-0
-              w-40
-              z-0
-              translate-x-1
-              translate-y-4
               pointer-events-none
             "
           />
@@ -70,10 +60,12 @@ export default function Portada() {
               absolute
               top-0
               right-0
-              w-40
+              w-32
+              min-[390px]:w-36
+              sm:w-44
               z-0
-              translate-x-5
-              -translate-y-1
+              translate-x-7
+              -translate-y-4
               -rotate-90
               pointer-events-none
             "
@@ -87,11 +79,31 @@ export default function Portada() {
               absolute
               bottom-0
               left-0
-              w-40
+              w-32
+              min-[390px]:w-36
+              sm:w-44
               z-0
+              -translate-x-7
+              translate-y-5
               rotate-90
-              -translate-x-4
-              translate-y-1
+              pointer-events-none
+            "
+          />
+
+          {/* Flores esquina inferior derecha */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
+            className="
+              absolute
+              bottom-0
+              right-0
+              w-32
+              min-[390px]:w-36
+              sm:w-44
+              z-0
+              translate-x-1
+              translate-y-10
               pointer-events-none
             "
           />
@@ -114,6 +126,7 @@ export default function Portada() {
                 font-cursiveDancing
                 text-[#6E7140]
                 text-5xl
+                min-[390px]:text-6xl
                 leading-tight
               "
             >

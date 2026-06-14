@@ -3,45 +3,75 @@ import { motion } from "framer-motion";
 
 const Novios = () => {
   return (
-    <div className="w-full bg-[#E3DBD1] py-20 px-6 flex items-center justify-center overflow-hidden relative">
-     {/* Flores esquina superior izquierda */}
-          <img
-            src="/flores-esquina.png"
-            alt="Flores decorativas"
-            className="
-              absolute
-              top-0
-              left-0
-              w-80
-              z-0
-              -translate-x-3
-              -translate-y-20
-              rotate-180
-              pointer-events-none
-            "
-          />
+    <div
+      className="
+        w-full
+        bg-[#E3DBD1]
+        py-32
+        px-4
+        sm:px-6
+        md:px-10
+        flex
+        items-center
+        justify-center
+        overflow-hidden
+        relative
+      "
+    >
+      {/* Flores esquina superior izquierda */}
+      <img
+        src="/flores-esquina.png"
+        alt="Flores decorativas"
+        className="
+          absolute
+          top-0
+          left-0
+          w-40
+          sm:w-52
+          md:w-64
+          lg:w-80
+          z-0
+          -translate-x-2
+          sm:-translate-x-10
+          md:-translate-x-8
+          -translate-y-10
+          sm:-translate-y-14
+          md:-translate-y-20
+          rotate-180
+          pointer-events-none
+        "
+      />
+
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         className="
-          max-w-4xl w-full
+          relative
+          z-10
+          max-w-4xl
+          w-full
           bg-white/80
           backdrop-blur-sm
-          rounded-tl-[4rem]
-          rounded-br-[4rem]
+          rounded-tl-[3rem]
+          sm:rounded-tl-[4rem]
+          rounded-br-[3rem]
+          sm:rounded-br-[4rem]
           rounded-tr-[1rem]
           rounded-bl-[1rem]
           shadow-[0_15px_50px_rgba(0,0,0,0.08)]
-          px-8 py-16 sm:px-16
+          px-6
+          py-14
+          sm:px-10
+          sm:py-16
+          md:px-16
           text-center
-          relative
           overflow-hidden
-          border border-[#B8C0A0]/30
+          border
+          border-[#B8C0A0]/30
         "
       >
-
         {/* Glow decorativo */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#B8C0A0]/20 via-transparent to-[#B7410E]/10 pointer-events-none"></div>
 
@@ -52,7 +82,10 @@ const Novios = () => {
           transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: true }}
           className="
-            text-xl sm:text-2xl
+            relative
+            z-10
+            text-xl
+            sm:text-2xl
             text-[#636B2F]/90
             font-[DancingScript]
             leading-relaxed
@@ -61,7 +94,7 @@ const Novios = () => {
           Con la bendición de nuestros padres
         </motion.p>
 
-        <p className="mt-3 text-[#B7410E] uppercase tracking-[0.3em] text-xs">
+        <p className="relative z-10 mt-3 text-[#B7410E] uppercase tracking-[0.25em] sm:tracking-[0.3em] text-[10px] sm:text-xs">
           Y en compañía de nuestros seres queridos
         </p>
 
@@ -71,12 +104,11 @@ const Novios = () => {
           whileInView={{ width: "6rem" }}
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
-          className="h-[2px] bg-[#B7410E] mx-auto mt-8"
+          className="relative z-10 h-[2px] bg-[#B7410E] mx-auto mt-8"
         />
 
         {/* Padres */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-14">
-
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-14">
           {/* Padres Novio */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -87,9 +119,11 @@ const Novios = () => {
               bg-white/70
               backdrop-blur-sm
               rounded-3xl
-              p-8
+              p-6
+              sm:p-8
               shadow-md
-              border border-[#B8C0A0]/30
+              border
+              border-[#B8C0A0]/30
             "
           >
             <h2
@@ -97,7 +131,8 @@ const Novios = () => {
                 text-[#B7410E]
                 uppercase
                 tracking-[0.2em]
-                text-sm
+                text-xs
+                sm:text-sm
                 mb-6
               "
             >
@@ -106,9 +141,11 @@ const Novios = () => {
 
             <p
               className="
-                text-2xl
+                text-xl
+                sm:text-2xl
                 font-playfair
                 text-[#636B2F]
+                leading-snug
               "
             >
               GUADALUPE MARTINEZ RAMOS
@@ -125,9 +162,11 @@ const Novios = () => {
               bg-white/70
               backdrop-blur-sm
               rounded-3xl
-              p-8
+              p-6
+              sm:p-8
               shadow-md
-              border border-[#B8C0A0]/30
+              border
+              border-[#B8C0A0]/30
             "
           >
             <h2
@@ -135,7 +174,8 @@ const Novios = () => {
                 text-[#B7410E]
                 uppercase
                 tracking-[0.2em]
-                text-sm
+                text-xs
+                sm:text-sm
                 mb-6
               "
             >
@@ -144,9 +184,11 @@ const Novios = () => {
 
             <p
               className="
-                text-2xl
+                text-xl
+                sm:text-2xl
                 font-playfair
                 text-[#636B2F]
+                leading-snug
               "
             >
               LUCIANO BARRAN CALIX
@@ -158,8 +200,10 @@ const Novios = () => {
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
               className="
-                my-6
-                text-2xl sm:text-3xl
+                my-5
+                sm:my-6
+                text-2xl
+                sm:text-3xl
                 text-[#B7410E]
                 font-[DancingScript]
               "
@@ -169,9 +213,11 @@ const Novios = () => {
 
             <p
               className="
-                text-2xl
+                text-xl
+                sm:text-2xl
                 font-playfair
                 text-[#636B2F]
+                leading-snug
               "
             >
               GLORIA CRISTINA LEON HERNANDEZ
@@ -185,7 +231,7 @@ const Novios = () => {
           whileInView={{ width: "7rem" }}
           transition={{ duration: 1, delay: 0.6 }}
           viewport={{ once: true }}
-          className="h-[2px] bg-[#B7410E] mx-auto mt-14"
+          className="relative z-10 h-[2px] bg-[#B7410E] mx-auto mt-14"
         />
 
         {/* Padrinos */}
@@ -195,11 +241,14 @@ const Novios = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
           className="
+            relative
+            z-10
             mt-8
             uppercase
             text-[#B7410E]
             tracking-[0.2em]
-            text-xs sm:text-sm
+            text-xs
+            sm:text-sm
             font-semibold
           "
         >
@@ -212,8 +261,12 @@ const Novios = () => {
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
           className="
+            relative
+            z-10
             mt-10
-            text-3xl sm:text-4xl md:text-5xl
+            text-2xl
+            sm:text-4xl
+            md:text-5xl
             font-playfair
             text-[#636B2F]
             leading-tight
@@ -228,8 +281,12 @@ const Novios = () => {
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
           className="
-            my-6
-            text-3xl sm:text-4xl
+            relative
+            z-10
+            my-5
+            sm:my-6
+            text-3xl
+            sm:text-4xl
             text-[#B7410E]
             font-[DancingScript]
           "
@@ -243,7 +300,11 @@ const Novios = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: true }}
           className="
-            text-3xl sm:text-4xl md:text-5xl
+            relative
+            z-10
+            text-2xl
+            sm:text-4xl
+            md:text-5xl
             font-playfair
             text-[#636B2F]
             leading-tight
@@ -251,24 +312,30 @@ const Novios = () => {
         >
           SILVIA BARRAN DOMINGUEZ
         </motion.h1>
-
       </motion.div>
 
       {/* Flores esquina inferior derecha */}
-          <img
-            src="/flores-esquina.png"
-            alt="Flores decorativas"
-            className="
-              absolute
-              bottom-0
-              right-0
-              w-80
-              z-0
-              translate-x-2
-              translate-y-20
-              pointer-events-none
-            "
-          />
+      <img
+        src="/flores-esquina.png"
+        alt="Flores decorativas"
+        className="
+          absolute
+          bottom-0
+          right-0
+          w-40
+          sm:w-52
+          md:w-64
+          lg:w-80
+          z-0
+          translate-x-1
+          sm:translate-x-10
+          md:translate-x-8
+          translate-y-9
+          sm:translate-y-14
+          md:translate-y-20
+          pointer-events-none
+        "
+      />
     </div>
   );
 };

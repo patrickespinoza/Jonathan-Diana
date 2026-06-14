@@ -9,7 +9,7 @@ const Decoracion = () => {
               absolute
               top-0
               left-0
-              w-80
+              w-44
               z-0
               -translate-x-3
               -translate-y-20
@@ -85,7 +85,7 @@ const Decoracion = () => {
               absolute
               bottom-0
               right-0
-              w-80
+              w-44
               z-0
               translate-x-2
               translate-y-20

@@ -27,12 +27,12 @@ const Regalos = () => {
           absolute
           top-0
           left-0
-          w-32
+          w-44
           sm:w-48
           md:w-60
           lg:w-80
           -translate-x-1
-          -translate-y-10
+          -translate-y-14
           pointer-events-none
           z-0
           rotate-180
@@ -47,7 +47,7 @@ const Regalos = () => {
           absolute
           bottom-0
           right-0
-          w-32
+          w-44
           sm:w-48
           md:w-60
           lg:w-80
