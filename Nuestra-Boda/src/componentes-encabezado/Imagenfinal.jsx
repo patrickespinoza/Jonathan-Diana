@@ -18,7 +18,7 @@ const ImagenFinal = () => {
 
         <div className="w-24 h-[2px] bg-[#9E8E7B] mt-6"></div>
 
-        <p className="text-white mt-4 text-lg font-cursiveDancing opacity-90">
+        <p className="text-white mt-4 text-3xl font-cursiveDancing opacity-90">
           ¡Te esperamos!
         </p>
       </div>

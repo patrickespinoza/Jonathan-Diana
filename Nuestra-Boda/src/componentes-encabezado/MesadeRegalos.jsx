@@ -6,7 +6,7 @@ const Regalos = () => {
   const [copiado, setCopiado] = useState(false);
 
   const copiarCuenta = () => {
-    navigator.clipboard.writeText("1234 5678 9012 3456");
+    navigator.clipboard.writeText("5579 0701 5790 1458");
 
     setCopiado(true);
 
@@ -95,6 +95,8 @@ const Regalos = () => {
               exit={{ scale: 0.8, opacity: 0, y: 60 }}
               transition={{ duration: 0.4 }}
               className="relative"
+
+              
             >
               {/* Tarjeta Premium */}
               <div
@@ -172,78 +174,95 @@ const Regalos = () => {
                     </p>
                   </div>
                 </div>
+                  {/* Botón copiar integrado */}
+    <button
+      onClick={copiarCuenta}
+      className="
+        absolute
+        bottom-2
+        right-4
+        w-12
+        h-12
+        rounded-full
+        bg-white/15
+        backdrop-blur-md
+        border
+        border-white/20
+        flex
+        items-center
+        justify-center
+        text-[#FFF7D6]
+        hover:bg-white/25
+        hover:scale-110
+        transition-all
+        duration-300
+      "
+      title="Copiar número de cuenta"
+    >
+      {copiado ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <rect
+            x="9"
+            y="9"
+            width="11"
+            height="11"
+            rx="2"
+          />
+          <rect
+            x="4"
+            y="4"
+            width="11"
+            height="11"
+            rx="2"
+          />
+        </svg>
+      )}
+    </button>
+    
+    {/* Tooltip */}
+    {copiado && (
+      <div
+        className="
+          absolute
+          bottom-20
+          right-6
+          bg-black/80
+          text-white
+          text-xs
+          px-3
+          py-2
+          rounded-lg
+          backdrop-blur-md
+        "
+      >
+        Cuenta copiada
+      </div>
+    )}
               </div>
 
-              {/* Panel inferior */}
-              <div className="bg-white rounded-b-[28px] p-6 shadow-xl">
-                <button
-                  onClick={copiarCuenta}
-                  className="
-                    w-full
-                    bg-[#C8A76A]
-                    hover:bg-[#B49355]
-                    text-black
-                    py-3
-                    rounded-xl
-                    font-semibold
-                    transition-all
-                    duration-300
-                    flex
-                    items-center
-                    justify-center
-                    gap-3
-                  "
-                >
-                  {copiado ? (
-                    <>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-
-                      Cuenta copiada
-                    </>
-                  ) : (
-                    <>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-5 h-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <rect
-                          x="9"
-                          y="9"
-                          width="11"
-                          height="11"
-                          rx="2"
-                        />
-                        <rect
-                          x="4"
-                          y="4"
-                          width="11"
-                          height="11"
-                          rx="2"
-                        />
-                      </svg>
-
-                      Copiar cuenta
-                    </>
-                  )}
-                </button>
-              </div>
+  
 
               {/* Cerrar */}
               <button
