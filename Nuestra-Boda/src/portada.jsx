@@ -33,43 +33,7 @@ export default function Portada() {
             bg-[#F5EFE6]
           "
         >
-          {/* Flores esquina superior izquierda */}
-          <img
-            src="/flores-esquina.png"
-            alt="Flores decorativas"
-            className="
-              absolute
-              top-0
-              left-0
-              w-28
-              min-[390px]:w-36
-              sm:w-44
-              z-0
-              -translate-x-1
-              -translate-y-16
-              rotate-180
-              pointer-events-none
-            "
-          />
-
-          {/* Flores esquina superior derecha */}
-          <img
-            src="/flores-esquina.png"
-            alt="Flores decorativas"
-            className="
-              absolute
-              top-0
-              right-0
-              w-20
-              min-[390px]:w-36
-              sm:w-44
-              z-0
-              translate-x-7
-              -translate-y-10
-              -rotate-90
-              pointer-events-none
-            "
-          />
+          
 
           {/* Flores esquina inferior izquierda */}
           <img
