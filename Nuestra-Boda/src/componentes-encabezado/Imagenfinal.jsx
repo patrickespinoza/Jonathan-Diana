@@ -13,7 +13,7 @@ const ImagenFinal = () => {
         <img
           src="/Fotofinal.JPG"
           alt="Boda"
-          className="w-72 sm:w-96 rounded-2xl shadow-2xl border border-white/20"
+          className="w-72 sm:w-2/3 rounded-2xl shadow-2xl border border-white/20"
         />
 
         <div className="w-24 h-[2px] bg-[#9E8E7B] mt-6"></div>
