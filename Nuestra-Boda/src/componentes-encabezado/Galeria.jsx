@@ -6,17 +6,47 @@ const Galeria = () => {
 
       <div className="max-w-5xl mx-auto text-center">
 
-        <p className="uppercase tracking-[0.3em] text-[#B7410E] text-sm">
+        <p
+          className="
+            uppercase
+            tracking-[0.3em]
+            text-[#B7410E]
+            text-sm
+          "
+        >
           Nuestra Historia
         </p>
 
-        <h1 className="font-cursiveDancing text-[#636B2F] text-5xl mt-4">
+        <h1
+          className="
+            font-cursiveDancing
+            text-[#636B2F]
+            text-5xl
+            mt-4
+          "
+        >
           Nuestros Momentos
         </h1>
 
-        <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
+        <div
+          className="
+            w-24
+            h-[2px]
+            bg-[#B7410E]
+            mx-auto
+            mt-6
+          "
+        />
 
-        <p className="mt-8 text-[#636B2F]/80 text-lg max-w-2xl mx-auto">
+        <p
+          className="
+            mt-8
+            text-[#636B2F]/80
+            text-lg
+            max-w-2xl
+            mx-auto
+          "
+        >
           Cada fotografía guarda un recuerdo,
           una sonrisa y un instante que nos ha traído
           hasta este día tan especial.
@@ -29,8 +59,10 @@ const Galeria = () => {
             backdrop-blur-sm
             rounded-[3rem]
             shadow-xl
-            border border-[#B8C0A0]/30
-            p-6 md:p-10
+            border
+            border-[#B8C0A0]/30
+            p-4
+            md:p-8
           "
         >
           <Carousel />

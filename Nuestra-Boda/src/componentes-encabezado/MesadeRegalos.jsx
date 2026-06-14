@@ -157,7 +157,7 @@ const Regalos = () => {
                     text-[#FFF7D6]
                   "
                 >
-                  1234 5678 9012 3456
+                  5579 0701 5790 1458
                 </p>
 
                 {/* Datos */}
@@ -168,17 +168,7 @@ const Regalos = () => {
                     </p>
 
                     <p className="text-[#FFF7D6] text-sm">
-                      JUAN PEREZ
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-[#F7E7B5]/70 text-xs">
-                      CLABE
-                    </p>
-
-                    <p className="text-[#FFF7D6] text-sm">
-                      123456789012345678
+                      Diana Maythe Barran Leon
                     </p>
                   </div>
                 </div>

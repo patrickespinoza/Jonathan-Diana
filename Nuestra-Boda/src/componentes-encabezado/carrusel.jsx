@@ -30,19 +30,28 @@ const Carousel = () => {
   return (
     <div className="flex flex-col items-center">
 
-      {/* Imagen */}
-      <div className="relative w-full max-w-2xl">
+      {/* Contenedor fijo */}
+      <div
+        className="
+          relative
+          w-full
+          max-w-3xl
+          h-[520px]
+          md:h-[650px]
+          rounded-[2rem]
+          overflow-hidden
+          bg-[#F8F5F0]
+          shadow-xl
+        "
+      >
 
         <img
           src={images[index]}
           alt={`Imagen ${index + 1}`}
           className="
             w-full
-            h-auto
-            max-h-[80vh]
+            h-full
             object-contain
-            rounded-[2rem]
-            shadow-lg
             transition-all
             duration-700
           "
@@ -59,12 +68,12 @@ const Carousel = () => {
             w-12
             h-12
             rounded-full
-            bg-white/80
-            backdrop-blur-sm
-            text-[#C14E29]
+            bg-white/90
+            backdrop-blur-md
+            text-[#B7410E]
             shadow-lg
             hover:scale-110
-            transition
+            transition-all
           "
         >
           ‹
@@ -81,16 +90,17 @@ const Carousel = () => {
             w-12
             h-12
             rounded-full
-            bg-white/80
-            backdrop-blur-sm
-            text-[#C14E29]
+            bg-white/90
+            backdrop-blur-md
+            text-[#B7410E]
             shadow-lg
             hover:scale-110
-            transition
+            transition-all
           "
         >
           ›
         </button>
+
       </div>
 
       {/* Indicadores */}
@@ -106,7 +116,7 @@ const Carousel = () => {
               duration-300
               ${
                 index === i
-                  ? "w-8 h-3 bg-[#C14E29]"
+                  ? "w-8 h-3 bg-[#B7410E]"
                   : "w-3 h-3 bg-[#636B2F]"
               }
             `}
@@ -116,7 +126,15 @@ const Carousel = () => {
       </div>
 
       {/* Contador */}
-      <p className="mt-6 text-[#7B7A42] text-sm tracking-widest uppercase">
+      <p
+        className="
+          mt-6
+          text-[#636B2F]
+          text-sm
+          tracking-widest
+          uppercase
+        "
+      >
         {index + 1} / {images.length}
       </p>
 
