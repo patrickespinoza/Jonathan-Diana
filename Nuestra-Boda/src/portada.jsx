@@ -1,15 +1,10 @@
 import React from "react";
 
-
 export default function Portada() {
- 
-
   return (
     <section className="w-full bg-[#F5EFE6]">
-
       {/* MOBILE */}
       <div className="block md:hidden">
-
         <div className="relative w-full">
           <img
             src="/Portada-02.JPG"
@@ -23,60 +18,132 @@ export default function Portada() {
           <div className="absolute inset-0 bg-black/15"></div>
         </div>
 
+        {/* TEXTO MOBILE CON FLORES */}
         <div
           className="
+            relative
+            overflow-hidden
             px-6
-            py-10
+            py-16
             text-center
             bg-[#F5EFE6]
           "
         >
-          <p
+          {/* Flores esquina superior izquierda */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
             className="
-              uppercase
-              tracking-[0.35em]
-              text-[#B6642E]
-              text-xs
-              mb-4
-            "
-          >
-            Nuestra Boda
-          </p>
-
-          <h1
-            className="
-              font-cursiveDancing
-              text-[#6E7140]
-              text-5xl
-              leading-tight
-            "
-          >
-            JONATHAN
-            <br />
-            &
-            <br />
-            DIANA
-          </h1>
-
-          <div
-            className="
-              w-20
-              h-[2px]
-              bg-[#B6642E]
-              mx-auto
-              my-5
+              absolute
+              top-0
+              left-0
+              w-40
+              z-0
+              -translate-x-1
+              -translate-y-4
+              rotate-180
+              pointer-events-none
             "
           />
 
-          <p
+          {/* Flores esquina inferior derecha */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
             className="
-              text-[#5F5F5F]
-              tracking-[0.25em]
-              text-sm
+              absolute
+              bottom-0
+              right-0
+              w-40
+              z-0
+              translate-x-1
+              translate-y-4
+              pointer-events-none
             "
-          >
-            NOS CASAMOS
-          </p>
+          />
+
+          {/* Flores esquina superior izquierda */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
+            className="
+              absolute
+              top-0
+              right-0
+              w-40
+              z-0
+              translate-x-4
+              -translate-y-1
+              -rotate-90
+              pointer-events-none
+            "
+          />
+
+          {/* Flores esquina inferior derecha */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
+            className="
+              absolute
+              bottom-0
+              left-0
+              w-40
+              z-0
+              rotate-90
+              -translate-x-4
+              translate-y-1
+              pointer-events-none
+            "
+          />
+
+          <div className="relative z-10">
+            <p
+              className="
+                uppercase
+                tracking-[0.35em]
+                text-[#B6642E]
+                text-xs
+                mb-4
+              "
+            >
+              Nuestra Boda
+            </p>
+
+            <h1
+              className="
+                font-cursiveDancing
+                text-[#6E7140]
+                text-5xl
+                leading-tight
+              "
+            >
+              JONATHAN
+              <br />
+              &
+              <br />
+              DIANA
+            </h1>
+
+            <div
+              className="
+                w-20
+                h-[2px]
+                bg-[#B6642E]
+                mx-auto
+                my-5
+              "
+            />
+
+            <p
+              className="
+                text-[#5F5F5F]
+                tracking-[0.25em]
+                text-sm
+              "
+            >
+              NOS CASAMOS
+            </p>
+          </div>
         </div>
       </div>
 
@@ -134,7 +201,6 @@ export default function Portada() {
           </p>
         </div>
       </div>
-
     </section>
   );
 }
