@@ -62,7 +62,7 @@ export default function Portada() {
             "
           />
 
-          {/* Flores esquina superior izquierda */}
+          {/* Flores esquina superior derecha */}
           <img
             src="/flores-esquina.png"
             alt="Flores decorativas"
@@ -72,14 +72,14 @@ export default function Portada() {
               right-0
               w-40
               z-0
-              translate-x-4
+              translate-x-5
               -translate-y-1
               -rotate-90
               pointer-events-none
             "
           />
 
-          {/* Flores esquina inferior derecha */}
+          {/* Flores esquina inferior izquierda */}
           <img
             src="/flores-esquina.png"
             alt="Flores decorativas"

@@ -1,9 +1,96 @@
+import React from "react";
+
 const Detalles = () => {
   return (
-    <section className="bg-[#E3DBD1] py-24 px-6">
+    <section className="relative bg-[#E3DBD1] py-24 px-6 overflow-hidden">
 
+
+      {/* ESQUINA SUPERIOR IZQUIERDA */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          top-0
+          left-0
+          w-32
+          sm:w-48
+          md:w-60
+          lg:w-80
+          -translate-x-1
+          -translate-y-10
+          pointer-events-none
+          z-0
+          rotate-180
+        "
+      />
+
+      {/* ESQUINA SUPERIOR DERECHA */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          top-0
+          right-0
+          w-32
+          sm:w-48
+          md:w-60
+          lg:w-80
+          translate-x-1
+          -translate-y-14
+          scale-x-[-1]
+          pointer-events-none
+          z-0
+          rotate-180
+        "
+      />
+
+      {/* ESQUINA INFERIOR IZQUIERDA */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          bottom-0
+          left-0
+          w-32
+          sm:w-48
+          md:w-60
+          lg:w-80
+          -translate-x-1
+          translate-y-16
+          scale-y-[-1]
+          pointer-events-none
+          z-0
+          rotate-180
+        "
+      />
+
+      {/* ESQUINA INFERIOR DERECHA */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          bottom-0
+          right-0
+          w-32
+          sm:w-48
+          md:w-60
+          lg:w-80
+          translate-x-1
+          translate-y-16
+          pointer-events-none
+          z-0
+        "
+      />
+
+      {/* CONTENEDOR PRINCIPAL */}
       <div
         className="
+          relative
+          z-10
           max-w-6xl
           mx-auto
           bg-white/70
@@ -14,7 +101,6 @@ const Detalles = () => {
           p-8 md:p-14
         "
       >
-
         {/* Encabezado */}
         <div className="text-center">
 
@@ -58,7 +144,13 @@ const Detalles = () => {
             <img
               src="/Dresscode01.JPG"
               alt="Vestimenta Mujer"
-              className="w-full max-w-xs mx-auto rounded-3xl shadow-lg"
+              className="
+                w-full
+                max-w-xs
+                mx-auto
+                rounded-3xl
+                shadow-lg
+              "
             />
           </div>
 
@@ -90,7 +182,7 @@ const Detalles = () => {
 
             </div>
 
-            {/* Solo adultos */}
+            {/* Brindis */}
             <div className="mt-12">
 
               <p className="text-4xl">
@@ -110,14 +202,21 @@ const Detalles = () => {
             <img
               src="/Dresscode02.JPG"
               alt="Vestimenta Hombre"
-              className="w-full max-w-xs mx-auto rounded-3xl shadow-lg"
+              className="
+                w-full
+                max-w-xs
+                mx-auto
+                rounded-3xl
+                shadow-lg
+              "
             />
-
           </div>
 
         </div>
-
       </div>
+
+      
+
     </section>
   );
 };

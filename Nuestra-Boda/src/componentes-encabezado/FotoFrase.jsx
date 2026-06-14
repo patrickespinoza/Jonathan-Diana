@@ -1,7 +1,22 @@
 const Decoracion = () => {
   return (
     <section className="relative bg-[#E3DBD1] py-24 px-6 overflow-hidden">
-
+     {/* Flores esquina superior izquierda */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
+            className="
+              absolute
+              top-0
+              left-0
+              w-80
+              z-0
+              -translate-x-3
+              -translate-y-20
+              rotate-180
+              pointer-events-none
+            "
+          />
       {/* Decoraciones de fondo */}
       <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-[#B8C0A0]/20 blur-3xl"></div>
 
@@ -60,7 +75,23 @@ const Decoracion = () => {
           NUESTRA HISTORIA COMIENZA
         </p>
 
+
       </div>
+        {/* Flores esquina inferior derecha */}
+          <img
+            src="/flores-esquina.png"
+            alt="Flores decorativas"
+            className="
+              absolute
+              bottom-0
+              right-0
+              w-80
+              z-0
+              translate-x-2
+              translate-y-20
+              pointer-events-none
+            "
+          />
     </section>
   );
 };

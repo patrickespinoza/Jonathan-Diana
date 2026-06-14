@@ -17,8 +17,48 @@ const Regalos = () => {
 
   return (
     <>
-      <section className="bg-[#E3DBD1] py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative bg-[#E3DBD1] py-24 px-6 overflow-hidden">
+
+        {/* ESQUINA SUPERIOR IZQUIERDA */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          top-0
+          left-0
+          w-32
+          sm:w-48
+          md:w-60
+          lg:w-80
+          -translate-x-1
+          -translate-y-10
+          pointer-events-none
+          z-0
+          rotate-180
+        "
+      />
+
+        {/* ESQUINA INFERIOR DERECHA */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          bottom-0
+          right-0
+          w-32
+          sm:w-48
+          md:w-60
+          lg:w-80
+          translate-x-1
+          translate-y-16
+          pointer-events-none
+          z-0
+        "
+      />
+
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="uppercase tracking-[0.35em] text-[#B7410E] text-xs">
             Regalos
           </p>
@@ -26,9 +66,14 @@ const Regalos = () => {
           <h1 className="font-cursiveDancing text-[#636B2F] text-5xl mt-4">
             Lluvia de Sobres
           </h1>
-           <img className="h-auto w-40 mx-auto my-6" src="/Sobre.png" alt="sobre" />
-          <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
 
+          <img
+            className="h-auto w-40 mx-auto my-6"
+            src="/Sobre.png"
+            alt="sobre"
+          />
+
+          <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
 
           <p
             className="
@@ -95,14 +140,13 @@ const Regalos = () => {
               exit={{ scale: 0.8, opacity: 0, y: 60 }}
               transition={{ duration: 0.4 }}
               className="relative"
-
-              
             >
               {/* Tarjeta Premium */}
               <div
                 className="
                   relative
                   w-[380px]
+                  max-w-[90vw]
                   h-[240px]
                   rounded-[28px]
                   overflow-hidden
@@ -174,95 +218,94 @@ const Regalos = () => {
                     </p>
                   </div>
                 </div>
-                  {/* Botón copiar integrado */}
-    <button
-      onClick={copiarCuenta}
-      className="
-        absolute
-        bottom-2
-        right-4
-        w-12
-        h-12
-        rounded-full
-        bg-white/15
-        backdrop-blur-md
-        border
-        border-white/20
-        flex
-        items-center
-        justify-center
-        text-[#FFF7D6]
-        hover:bg-white/25
-        hover:scale-110
-        transition-all
-        duration-300
-      "
-      title="Copiar número de cuenta"
-    >
-      {copiado ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M5 13l4 4L19 7"
-          />
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <rect
-            x="9"
-            y="9"
-            width="11"
-            height="11"
-            rx="2"
-          />
-          <rect
-            x="4"
-            y="4"
-            width="11"
-            height="11"
-            rx="2"
-          />
-        </svg>
-      )}
-    </button>
-    
-    {/* Tooltip */}
-    {copiado && (
-      <div
-        className="
-          absolute
-          bottom-20
-          right-6
-          bg-black/80
-          text-white
-          text-xs
-          px-3
-          py-2
-          rounded-lg
-          backdrop-blur-md
-        "
-      >
-        Cuenta copiada
-      </div>
-    )}
-              </div>
 
-  
+                {/* Botón copiar integrado */}
+                <button
+                  onClick={copiarCuenta}
+                  className="
+                    absolute
+                    bottom-2
+                    right-4
+                    w-12
+                    h-12
+                    rounded-full
+                    bg-white/15
+                    backdrop-blur-md
+                    border
+                    border-white/20
+                    flex
+                    items-center
+                    justify-center
+                    text-[#FFF7D6]
+                    hover:bg-white/25
+                    hover:scale-110
+                    transition-all
+                    duration-300
+                  "
+                  title="Copiar número de cuenta"
+                >
+                  {copiado ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <rect
+                        x="9"
+                        y="9"
+                        width="11"
+                        height="11"
+                        rx="2"
+                      />
+                      <rect
+                        x="4"
+                        y="4"
+                        width="11"
+                        height="11"
+                        rx="2"
+                      />
+                    </svg>
+                  )}
+                </button>
+
+                {/* Tooltip */}
+                {copiado && (
+                  <div
+                    className="
+                      absolute
+                      bottom-20
+                      right-6
+                      bg-black/80
+                      text-white
+                      text-xs
+                      px-3
+                      py-2
+                      rounded-lg
+                      backdrop-blur-md
+                    "
+                  >
+                    Cuenta copiada
+                  </div>
+                )}
+              </div>
 
               {/* Cerrar */}
               <button
