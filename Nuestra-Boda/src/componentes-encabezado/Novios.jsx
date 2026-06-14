@@ -1,0 +1,245 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+const Novios = () => {
+  return (
+    <div className="w-full bg-[#E3DBD1] py-20 px-6 flex items-center justify-center overflow-hidden relative">
+
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        viewport={{ once: true }}
+        className="
+          max-w-4xl w-full
+          bg-white/80
+          backdrop-blur-sm
+          rounded-tl-[4rem]
+          rounded-br-[4rem]
+          rounded-tr-[1rem]
+          rounded-bl-[1rem]
+          shadow-[0_15px_50px_rgba(0,0,0,0.08)]
+          px-8 py-16 sm:px-16
+          text-center
+          relative
+          overflow-hidden
+          border border-[#B8C0A0]/30
+        "
+      >
+
+        {/* Glow decorativo */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#B8C0A0]/20 via-transparent to-[#C14E29]/10 pointer-events-none"></div>
+
+        {/* Encabezado */}
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="
+            text-xl sm:text-2xl
+            text-[#7B7A42]/90
+            font-[DancingScript]
+            leading-relaxed
+          "
+        >
+          Con la bendición de nuestros padres
+        </motion.p>
+
+        <p className="mt-3 text-[#C14E29] uppercase tracking-[0.3em] text-xs">
+          Y en compañía de nuestros seres queridos
+        </p>
+
+        {/* Línea */}
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "6rem" }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="h-[2px] bg-[#C14E29] mx-auto mt-8"
+        />
+
+        {/* Padres */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-14">
+
+          {/* Padres Novio */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+            className="
+              bg-white/70
+              backdrop-blur-sm
+              rounded-3xl
+              p-8
+              shadow-md
+              border border-[#B8C0A0]/30
+            "
+          >
+            <h2
+              className="
+                text-[#C14E29]
+                uppercase
+                tracking-[0.2em]
+                text-sm
+                mb-6
+              "
+            >
+              Padres del Novio
+            </h2>
+
+            <p
+              className="
+                text-2xl
+                font-playfair
+                text-[#7B7A42]
+              "
+            >
+              Guadalupe Martinez Ramos
+            </p>
+          </motion.div>
+
+          {/* Padres Novia */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 1.2 }}
+            viewport={{ once: true }}
+            className="
+              bg-white/70
+              backdrop-blur-sm
+              rounded-3xl
+              p-8
+              shadow-md
+              border border-[#B8C0A0]/30
+            "
+          >
+            <h2
+              className="
+                text-[#C14E29]
+                uppercase
+                tracking-[0.2em]
+                text-sm
+                mb-6
+              "
+            >
+              Padres de la Novia
+            </h2>
+
+            <p
+              className="
+                text-2xl
+                font-playfair
+                text-[#7B7A42]
+              "
+            >
+              Luciano Barran Calix
+            </p>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="
+                my-6
+                text-2xl sm:text-3xl
+                text-[#C14E29]
+                font-[DancingScript]
+              "
+            >
+              &
+            </motion.p>
+
+            <p
+              className="
+                text-2xl
+                font-playfair
+                text-[#7B7A42]
+              "
+            >
+              Gloria Cristina Leon Hernandez
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Línea divisora */}
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: "7rem" }}
+          transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="h-[2px] bg-[#C14E29] mx-auto mt-14"
+        />
+
+        {/* Padrinos */}
+        <motion.p
+          initial={{ opacity: 0, letterSpacing: "0.4em" }}
+          whileInView={{ opacity: 1, letterSpacing: "0.2em" }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="
+            mt-8
+            uppercase
+            text-[#C14E29]
+            tracking-[0.2em]
+            text-xs sm:text-sm
+            font-semibold
+          "
+        >
+          Padrinos de Velación
+        </motion.p>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="
+            mt-10
+            text-3xl sm:text-4xl md:text-5xl
+            font-playfair
+            text-[#7B7A42]
+            leading-tight
+          "
+        >
+          Angel Velazquez Saldivar
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="
+            my-6
+            text-3xl sm:text-4xl
+            text-[#C14E29]
+            font-[DancingScript]
+          "
+        >
+          &
+        </motion.p>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="
+            text-3xl sm:text-4xl md:text-5xl
+            font-playfair
+            text-[#7B7A42]
+            leading-tight
+          "
+        >
+          Silvia Barran Dominguez
+        </motion.h1>
+
+      </motion.div>
+    </div>
+  );
+};
+
+export default Novios;

@@ -22,14 +22,10 @@ export default function Portada() {
 
   return (
     <div>
-      <audio ref={audioRef} loop>
-        <source src="/TylerShaw.mp3" type="audio/mpeg" />
-        Tu navegador no soporta el elemento de audio para reproducir.
-      </audio>
       <section className="relative w-full h-[calc(110vh-160px)] md:h-screen flex flex-col items-center justify-center text-white">
   
   <img
-    src="/Portada-02.png"
+    src="/Portada-02.JPG"
     alt="Fondo"
     className="absolute w-full h-full object-cover"
   />
@@ -40,7 +36,7 @@ export default function Portada() {
   <div className="relative z-10 w-full h-full justify-end pb-16 items-center flex flex-col p-4 gap-4">
     
     <h1 className="roboto-black p-12 text-4xl sm:text-4xl md:text-6xl lg:text-8xl font-cursiveDancing">
-      Allison & David
+      JONATHAN & DIANA
     </h1>
 
     <p className="font-serif text-2xl sm:text-2xl md:text-3xl lg:text-4xl">

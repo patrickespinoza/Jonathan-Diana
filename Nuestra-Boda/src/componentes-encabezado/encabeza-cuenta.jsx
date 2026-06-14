@@ -3,16 +3,18 @@ import { useEffect, useState } from "react";
 const Countdown = ({ targetDate }) => {
   const calculateTime = () => {
     const difference = +new Date(targetDate) - +new Date();
+
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        dias: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hora: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        días: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        horas: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutos: Math.floor((difference / 1000 / 60) % 60),
         segundos: Math.floor((difference / 1000) % 60),
       };
     }
+
     return timeLeft;
   };
 
@@ -28,20 +30,79 @@ const Countdown = ({ targetDate }) => {
 
   return (
     <section>
-      <div className="p-2 sm:text-lg md:text-4xl lg:text-5xl text-black flex flex-col items-center rounded-lg font-playfair">
-        <div className="flex space-x-10">
+
+      <div className="flex flex-col items-center">
+
+        {/* Título */}
+        <h2 className="font-playfair text-[#7B7A42] text-2xl md:text-3xl mb-3 tracking-wide">
+          Cuenta Regresiva
+        </h2>
+
+        {/* Línea decorativa */}
+        <div className="w-24 h-[2px] bg-[#C14E29] mb-10"></div>
+
+        {/* Contador */}
+        <div className="flex flex-wrap justify-center gap-5 md:gap-8">
+
           {Object.keys(timeLeft).map((interval) => (
-            <div key={interval} className="flex flex-col items-center gap-2">
-              {/* Estilo para los números */}
-              <span className="bg-[#9E8E7B] text-white font-bold p-2 w-12 h-12 rounded-full text-2xl flex items-center justify-center">
+            <div
+              key={interval}
+              className="
+                flex flex-col items-center
+                bg-white/70
+                backdrop-blur-sm
+                rounded-3xl
+                px-5
+                py-5
+                shadow-lg
+                border border-[#B8C0A0]/40
+                min-w-[95px]
+              "
+            >
+              {/* Número */}
+              <span
+                className="
+                  w-16 h-16
+                  rounded-full
+                  bg-[#C14E29]
+                  text-white
+                  font-bold
+                  text-2xl
+                  flex
+                  items-center
+                  justify-center
+                  shadow-md
+                "
+              >
                 {timeLeft[interval]}
               </span>
-              {/* Estilo para las etiquetas (días, horas, minutos, segundos) */}
-              <span className="text-white capitalize">{interval}</span>
+
+              {/* Etiqueta */}
+              <span
+                className="
+                  mt-3
+                  text-[#7B7A42]
+                  uppercase
+                  tracking-wider
+                  text-xs
+                  font-semibold
+                "
+              >
+                {interval}
+              </span>
             </div>
           ))}
         </div>
-        {Object.keys(timeLeft).length === 0 && <span>Time's up!</span>}
+
+        {/* Mensaje final */}
+        {Object.keys(timeLeft).length === 0 && (
+          <div className="text-center">
+            <p className="text-[#C14E29] text-3xl font-cursiveDancing">
+              ¡Llegó el gran día!
+            </p>
+          </div>
+        )}
+
       </div>
     </section>
   );
