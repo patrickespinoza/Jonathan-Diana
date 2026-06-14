@@ -26,7 +26,7 @@ const Regalos = () => {
           <h1 className="font-cursiveDancing text-[#636B2F] text-5xl mt-4">
             Lluvia de Sobres
           </h1>
-
+           <img className="h-auto w-40 mx-auto my-6" src="/Sobre.png" alt="sobre" />
           <div className="w-24 h-[2px] bg-[#B7410E] mx-auto mt-6"></div>
 
 
