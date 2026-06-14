@@ -26,16 +26,16 @@ const Regalos = () => {
         className="
           absolute
           top-0
-          left-0
+          right-0
           w-44
           sm:w-48
           md:w-60
           lg:w-80
-          -translate-x-1
-          -translate-y-14
+          translate-x-10
+          -translate-y-6
           pointer-events-none
           z-0
-          rotate-180
+          -rotate-90
         "
       />
 
@@ -46,14 +46,15 @@ const Regalos = () => {
         className="
           absolute
           bottom-0
-          right-0
+          left-0
           w-44
           sm:w-48
           md:w-60
           lg:w-80
-          translate-x-1
-          translate-y-16
+          -translate-x-9
+          translate-y-11
           pointer-events-none
+          rotate-90
           z-0
         "
       />

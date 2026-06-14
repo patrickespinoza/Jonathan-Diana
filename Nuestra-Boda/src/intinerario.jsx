@@ -25,19 +25,6 @@ export default function Intinerario() {
 
   <div className="relative z-10 max-w-5xl mx-auto px-6 py-24 text-center">
 
-    {/* Flores superiores */}
-    <img
-      src="/flores-centro.png"
-      alt="Flores"
-      className="
-        mx-auto
-        w-full
-        max-w-3xl
-        mb-10
-        rotate-180
-      "
-    />
-
     {/* Texto pequeño */}
     <p className="uppercase tracking-[0.4em] text-[#B7410E] text-sm font-semibold mb-6">
       INVITACIÓN DE BODA
@@ -92,17 +79,6 @@ export default function Intinerario() {
 
   <Countdown targetDate="2026-07-25T00:00:00" />
 
-  {/* Flores inferiores */}
-  <div className="flex justify-center mt-12">
-    <img
-      src="/flores-centro.png"
-      alt="Flores"
-      className="
-        w-full
-        max-w-3xl
-      "
-    />
-  </div>
 
 </div>
         

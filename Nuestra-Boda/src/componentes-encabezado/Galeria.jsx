@@ -4,25 +4,6 @@ const Galeria = () => {
   return (
     <section className="relative bg-[#E3DBD1] py-24 px-6 overflow-hidden">
 
-      {/* ESQUINA SUPERIOR IZQUIERDA */}
-      <img
-        src="/flores-esquina.png"
-        alt=""
-        className="
-          absolute
-          top-0
-          left-0
-          w-44
-          sm:w-48
-          md:w-60
-          lg:w-80
-          -translate-x-1
-          -translate-y-16
-          pointer-events-none
-          z-0
-          rotate-180
-        "
-      />
 
       {/* ESQUINA SUPERIOR DERECHA */}
       <img
@@ -66,24 +47,7 @@ const Galeria = () => {
         "
       />
 
-      {/* ESQUINA INFERIOR DERECHA */}
-      <img
-        src="/flores-esquina.png"
-        alt=""
-        className="
-          absolute
-          bottom-0
-          right-0
-          w-44
-          sm:w-48
-          md:w-60
-          lg:w-80
-          translate-x-1
-          translate-y-20
-          pointer-events-none
-          z-0
-        "
-      />
+
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
 

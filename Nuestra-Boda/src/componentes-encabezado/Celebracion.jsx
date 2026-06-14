@@ -8,7 +8,6 @@ const CardUbicacion = ({
   direccion,
   link,
   icono,
-  imagen,
 }) => {
   return (
     <div
@@ -18,7 +17,6 @@ const CardUbicacion = ({
         rounded-[2rem]
         shadow-lg
         border border-[#636B2F]/30
-        overflow-hidden
         max-w-md
         w-full
         text-center
@@ -28,26 +26,6 @@ const CardUbicacion = ({
         hover:shadow-2xl
       "
     >
-      {/* Imagen */}
-      {imagen && (
-        <div className="overflow-hidden">
-          <img
-            src={imagen}
-            alt={titulo}
-            className="
-              w-72
-              h-44
-              object-cover
-              transition-all
-              duration-500
-              hover:scale-105
-              rotate-180
-            "
-          />
-        </div>
-      )}
-
-      {/* Contenido */}
       <div className="p-8">
         {/* Icono */}
         {icono && (
@@ -148,9 +126,55 @@ const CardUbicacion = ({
 
 const Celebracion = () => {
   return (
-    <section className="bg-[#E3DBD1] py-20 px-6">
+    <section className="relative bg-[#E3DBD1] py-20 px-6 overflow-hidden">
+
+      {/* Flor superior izquierda */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          top-0
+          left-0
+          w-40
+          sm:w-52
+          md:w-64
+          lg:w-80
+          -translate-x-1
+          sm:-translate-x-10
+          -translate-y-14
+          sm:-translate-y-14
+          md:-translate-y-20
+          rotate-180
+          pointer-events-none
+          z-0
+        "
+      />
+
+      {/* Flor inferior derecha */}
+      <img
+        src="/flores-esquina.png"
+        alt=""
+        className="
+          absolute
+          bottom-0
+          right-0
+          w-40
+          sm:w-52
+          md:w-64
+          lg:w-80
+          translate-x-1
+          sm:translate-x-10
+          translate-y-16
+          sm:translate-y-14
+          md:translate-y-20
+          pointer-events-none
+          z-0
+        "
+      />
+
       {/* Título */}
-      <div className="text-center mb-14">
+      <div className="relative z-10 text-center mb-14">
         <p className="uppercase tracking-[0.3em] text-[#B7410E] text-sm">
           Ceremonia & Recepción
         </p>
@@ -163,7 +187,7 @@ const Celebracion = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
         
         <CardUbicacion
           icono="⛪"
@@ -173,7 +197,6 @@ const Celebracion = () => {
           lugar="Santuario de la Virgen de la Candelaria"
           direccion="Centro, 95460 Tlacotalpan, Ver."
           link="https://maps.app.goo.gl/Y335e5H1AkqZtHLE7"
-          imagen="/flores-esquina.png"
         />
 
         <CardUbicacion
@@ -184,10 +207,10 @@ const Celebracion = () => {
           lugar="Finca Holística Tlacotalpan"
           direccion="Alvarado - Cosamaloapan, 95469 Ver."
           link="https://maps.app.goo.gl/rJAKcuQq5QtjsYdr7"
-          imagen="/flores-esquina.png"
         />
 
       </div>
+
     </section>
   );
 };
