@@ -89,7 +89,7 @@ export default function Portada() {
               className="
                 font-cursiveDancing
                 text-[#6E7140]
-                text-5xl
+                text-4xl
                 min-[390px]:text-6xl
                 leading-tight
               "
@@ -160,7 +160,7 @@ export default function Portada() {
           <h1
             className="
               font-cursiveDancing
-              text-7xl
+              text-6xl
               lg:text-8xl
             "
           >
