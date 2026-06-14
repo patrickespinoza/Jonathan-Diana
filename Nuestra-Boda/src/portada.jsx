@@ -24,7 +24,7 @@ export default function Portada() {
             relative
             overflow-hidden
             px-6
-            py-32
+            py-24
             min-h-[360px]
             flex
             items-center
@@ -41,12 +41,12 @@ export default function Portada() {
               absolute
               top-0
               left-0
-              w-32
+              w-28
               min-[390px]:w-36
               sm:w-44
               z-0
               -translate-x-1
-              -translate-y-10
+              -translate-y-16
               rotate-180
               pointer-events-none
             "
@@ -60,12 +60,12 @@ export default function Portada() {
               absolute
               top-0
               right-0
-              w-32
+              w-20
               min-[390px]:w-36
               sm:w-44
               z-0
               translate-x-7
-              -translate-y-4
+              -translate-y-10
               -rotate-90
               pointer-events-none
             "
@@ -79,12 +79,12 @@ export default function Portada() {
               absolute
               bottom-0
               left-0
-              w-32
+              w-28
               min-[390px]:w-36
               sm:w-44
               z-0
               -translate-x-7
-              translate-y-5
+              translate-y-10
               rotate-90
               pointer-events-none
             "
@@ -98,12 +98,12 @@ export default function Portada() {
               absolute
               bottom-0
               right-0
-              w-32
+              w-28
               min-[390px]:w-36
               sm:w-44
               z-0
               translate-x-1
-              translate-y-10
+              translate-y-16
               pointer-events-none
             "
           />
