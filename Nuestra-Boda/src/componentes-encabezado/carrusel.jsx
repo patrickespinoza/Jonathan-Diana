@@ -38,8 +38,9 @@ const Carousel = () => {
           alt={`Imagen ${index + 1}`}
           className="
             w-full
-            h-[500px]
-            object-cover
+            h-auto
+            max-h-[80vh]
+            object-contain
             rounded-[2rem]
             shadow-lg
             transition-all
