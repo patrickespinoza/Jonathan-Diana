@@ -143,170 +143,187 @@ const Regalos = () => {
               className="relative"
             >
               {/* Tarjeta Premium */}
-              <div
-                className="
-                  relative
-                  w-[380px]
-                  max-w-[90vw]
-                  h-[240px]
-                  rounded-[28px]
-                  overflow-hidden
-                  shadow-[0_20px_60px_rgba(0,0,0,0.35)]
-                  p-8
-                "
-                style={{
-                  background:
-                    "linear-gradient(135deg,#111111 0%,#2D2D2D 40%,#C8A76A 100%)",
-                }}
-              >
-                {/* brillo */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-40"></div>
+<div
+  className="
+    relative
+    w-[92vw]
+    max-w-[380px]
+    h-[220px]
+    sm:h-[240px]
+    rounded-[24px]
+    sm:rounded-[28px]
+    overflow-hidden
+    shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+    p-5
+    sm:p-8
+  "
+  style={{
+    background:
+      "linear-gradient(135deg,#111111 0%,#2D2D2D 40%,#C8A76A 100%)",
+  }}
+>
+  {/* brillo */}
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-40"></div>
 
-                {/* Banco */}
-                <div className="relative flex justify-between items-center">
-                  <h2
-                    className="
-                      text-[#F7E7B5]
-                      tracking-[0.3em]
-                      text-sm
-                    "
-                  >
-                    SANTANDER
-                  </h2>
+  {/* Banco */}
+  <div className="relative flex justify-between items-center">
+    <h2
+      className="
+        text-[#F7E7B5]
+        tracking-[0.2em]
+        sm:tracking-[0.3em]
+        text-xs
+        sm:text-sm
+      "
+    >
+      SANTANDER
+    </h2>
 
-                  <span className="text-[#F7E7B5] text-sm">
-                    GOLD
-                  </span>
-                </div>
+    <span className="text-[#F7E7B5] text-xs sm:text-sm">
+      GOLD
+    </span>
+  </div>
 
-                {/* Chip */}
-                <div
-                  className="
-                    relative
-                    w-12
-                    h-9
-                    rounded-lg
-                    mt-8
-                  "
-                  style={{
-                    background:
-                      "linear-gradient(135deg,#F7E7B5,#C8A76A)",
-                  }}
-                />
+  {/* Chip */}
+  <div
+    className="
+      relative
+      w-10
+      h-8
+      sm:w-12
+      sm:h-9
+      rounded-lg
+      mt-6
+      sm:mt-8
+    "
+    style={{
+      background:
+        "linear-gradient(135deg,#F7E7B5,#C8A76A)",
+    }}
+  />
 
-                {/* Número */}
-                <p
-                  className="
-                    relative
-                    mt-8
-                    text-xl
-                    tracking-[0.25em]
-                    text-[#FFF7D6]
-                  "
-                >
-                  5579 0701 5790 1458
-                </p>
+  {/* Número */}
+  <p
+    className="
+      relative
+      mt-7
+      sm:mt-8
+      text-sm
+      min-[380px]:text-base
+      sm:text-xl
+      tracking-[0.15em]
+      sm:tracking-[0.25em]
+      text-[#FFF7D6]
+      whitespace-nowrap
+    "
+  >
+    5579 0701 5790 1458
+  </p>
 
-                {/* Datos */}
-                <div className="relative flex justify-between mt-2">
-                  <div>
-                    <p className="text-[#F7E7B5]/70 text-xs">
-                      TITULAR
-                    </p>
+  {/* Datos */}
+  <div className="relative flex justify-between mt-3">
+    <div>
+      <p className="text-[#F7E7B5]/70 text-[10px] sm:text-xs">
+        TITULAR
+      </p>
 
-                    <p className="text-[#FFF7D6] text-sm">
-                      Diana Maythe Barran Leon
-                    </p>
-                  </div>
-                </div>
+      <p className="text-[#FFF7D6] text-xs sm:text-sm">
+        Diana Maythe Barran Leon
+      </p>
+    </div>
+  </div>
 
-                {/* Botón copiar integrado */}
-                <button
-                  onClick={copiarCuenta}
-                  className="
-                    absolute
-                    bottom-2
-                    right-4
-                    w-12
-                    h-12
-                    rounded-full
-                    bg-white/15
-                    backdrop-blur-md
-                    border
-                    border-white/20
-                    flex
-                    items-center
-                    justify-center
-                    text-[#FFF7D6]
-                    hover:bg-white/25
-                    hover:scale-110
-                    transition-all
-                    duration-300
-                  "
-                  title="Copiar número de cuenta"
-                >
-                  {copiado ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <rect
-                        x="9"
-                        y="9"
-                        width="11"
-                        height="11"
-                        rx="2"
-                      />
-                      <rect
-                        x="4"
-                        y="4"
-                        width="11"
-                        height="11"
-                        rx="2"
-                      />
-                    </svg>
-                  )}
-                </button>
+  {/* Botón copiar */}
+  <button
+    onClick={copiarCuenta}
+    className="
+      absolute
+      bottom-2
+      right-3
+      sm:right-4
+      w-10
+      h-10
+      sm:w-12
+      sm:h-12
+      rounded-full
+      bg-white/15
+      backdrop-blur-md
+      border
+      border-white/20
+      flex
+      items-center
+      justify-center
+      text-[#FFF7D6]
+      hover:bg-white/25
+      hover:scale-110
+      transition-all
+      duration-300
+    "
+    title="Copiar número de cuenta"
+  >
+    {copiado ? (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5 sm:w-6 sm:h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M5 13l4 4L19 7"
+        />
+      </svg>
+    ) : (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5 sm:w-6 sm:h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <rect
+          x="9"
+          y="9"
+          width="11"
+          height="11"
+          rx="2"
+        />
+        <rect
+          x="4"
+          y="4"
+          width="11"
+          height="11"
+          rx="2"
+        />
+      </svg>
+    )}
+  </button>
 
-                {/* Tooltip */}
-                {copiado && (
-                  <div
-                    className="
-                      absolute
-                      bottom-20
-                      right-6
-                      bg-black/80
-                      text-white
-                      text-xs
-                      px-3
-                      py-2
-                      rounded-lg
-                      backdrop-blur-md
-                    "
-                  >
-                    Cuenta copiada
-                  </div>
-                )}
-              </div>
+  {/* Tooltip */}
+  {copiado && (
+    <div
+      className="
+        absolute
+        bottom-16
+        right-3
+        sm:right-6
+        bg-black/80
+        text-white
+        text-xs
+        px-3
+        py-2
+        rounded-lg
+        backdrop-blur-md
+      "
+    >
+      Cuenta copiada
+    </div>
+  )}
+</div>
 
               {/* Cerrar */}
               <button
