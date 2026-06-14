@@ -96,7 +96,7 @@ const Novios = () => {
                 text-[#636B2F]
               "
             >
-              Guadalupe Martinez Ramos
+              GUADALUPE MARTINEZ RAMOS
             </p>
           </motion.div>
 
@@ -134,7 +134,7 @@ const Novios = () => {
                 text-[#636B2F]
               "
             >
-              Luciano Barran Calix
+              LUCIANO BARRAN CALIX
             </p>
 
             <motion.p
@@ -159,7 +159,7 @@ const Novios = () => {
                 text-[#636B2F]
               "
             >
-              Gloria Cristina Leon Hernandez
+              GLORIA CRISTINA LEON HERNANDEZ
             </p>
           </motion.div>
         </div>
@@ -204,7 +204,7 @@ const Novios = () => {
             leading-tight
           "
         >
-          Angel Velazquez Saldivar
+          ANGEL VELAZQUEZ SALDIVAR
         </motion.h1>
 
         <motion.p
@@ -234,7 +234,7 @@ const Novios = () => {
             leading-tight
           "
         >
-          Silvia Barran Dominguez
+          SILVIA BARRAN DOMINGUEZ
         </motion.h1>
 
       </motion.div>

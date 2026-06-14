@@ -18,7 +18,7 @@ const Confirmacion = () => {
   const numero =
     tipoInvitado === "novio"
       ? "522949458172"
-      : "522881333860";
+      : "522881338600";
 
   const data = {
     nombre: nombreInvitado,

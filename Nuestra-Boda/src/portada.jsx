@@ -51,11 +51,11 @@ export default function Portada() {
               leading-tight
             "
           >
-            Jonathan
+            JONATHAN
             <br />
             &
             <br />
-            Diana
+            DIANA
           </h1>
 
           <div
