@@ -24,7 +24,7 @@ export default function Portada() {
             relative
             overflow-hidden
             px-6
-            py-24
+            py-20
             min-h-[360px]
             flex
             items-center
@@ -90,7 +90,7 @@ export default function Portada() {
                 font-cursiveDancing
                 text-[#6E7140]
                 text-4xl
-                min-[390px]:text-6xl
+                min-[390px]:text-5xl
                 leading-tight
               "
             >
