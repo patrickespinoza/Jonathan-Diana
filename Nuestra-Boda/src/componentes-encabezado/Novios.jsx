@@ -136,7 +136,7 @@ const Novios = () => {
                 mb-6
               "
             >
-              Padres del Novio
+              Madre del Novio
             </h2>
 
             <p
