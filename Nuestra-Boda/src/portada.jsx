@@ -74,7 +74,9 @@ export default function Portada() {
 
           <div className="relative z-10">
             <p
+              translate="no"
               className="
+                notranslate
                 uppercase
                 tracking-[0.35em]
                 text-[#B6642E]
@@ -86,7 +88,9 @@ export default function Portada() {
             </p>
 
             <h1
+            translate="no"
               className="
+                notranslate
                 font-cursiveDancing
                 text-[#6E7140]
                 text-4xl
@@ -112,7 +116,9 @@ export default function Portada() {
             />
 
             <p
+            translate="no"
               className="
+              notranslate
                 text-[#5F5F5F]
                 tracking-[0.25em]
                 text-sm
@@ -158,7 +164,9 @@ export default function Portada() {
           "
         >
           <h1
+          translate="no"
             className="
+             notranslate
               font-cursiveDancing
               text-6xl
               lg:text-8xl
@@ -168,7 +176,9 @@ export default function Portada() {
           </h1>
 
           <p
+          translate="no"
             className="
+            notransalate
               mt-4
               tracking-[0.25em]
               text-2xl
